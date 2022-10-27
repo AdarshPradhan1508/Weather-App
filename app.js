@@ -15,7 +15,7 @@ app.get("/",function(req,res)
 
     });
 
-    app.post("/", function(req, res){
+    app.post("/weatherapp", function(req, res){
     console.log(req.body.cityName);
     
         console.log("post request recieved.");
