@@ -21,7 +21,7 @@ app.get("/",function(req,res)
         console.log("post request recieved.");
         const query=req.body.cityName;
 
-        const url = "https://api.openweathermap.org/data/2.5/weather?lat=28.61&lon=77.80&appid=adbe6e3d42ac878df6c5c5fca189b128&units=metric&q="+query;
+        const url = "https://api.openweathermap.org/data/2.5/weather?lat=28.61&lon=77.80&appid=&units=metric&q="+query;
         https.get(url, function(response){
             console.log(response.statusCode);
     if(response.statusCode!=404)
